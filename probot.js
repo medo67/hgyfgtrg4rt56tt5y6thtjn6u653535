@@ -4,7 +4,7 @@ const fs = require("fs");
 const dateFormat = require('dateformat');
 const client = new Discord.Client(); 
 const Canvas = require("canvas"); //npm i canvas حمل بكج
-const prefix = "YOUR Prefix Here" // برفكس
+const prefix = "#" // برفكس
 let profile = JSON.parse(fs.readFileSync("profile.json", "utf8"))
 
 
@@ -819,7 +819,4 @@ message.channel.stopTyping()
 })
 }
 });
-client.login(process.env.BOT_TOKEN);//لاتعدل فيه شي ياقلبي
-
-
-//جميع الحقوق تعود ل Fras#9999 وشكرا
+client.login(process.env.BOT_TOKEN);
